@@ -5,10 +5,10 @@ phases:
     run-as: Administrator
     commands:
       - nuget.exe restore
-      - pwsh -Command 'Set-MpPreference -ExclusionPath "C:\"'
-      - pwsh -Command 'Set-MpPreference -DisableRealtimeMonitoring $true'
-      - pwsh -Command 'Set-MpPreference -MAPSReporting Disabled'
-      - pwsh -Command 'Set-MpPreference -SubmitSamplesConsent NeverSend'
+      - powershell.exe -command 'Set-MpPreference -ExclusionPath "C:\"'
+      - powershell.exe -command 'Set-MpPreference -DisableRealtimeMonitoring $true'
+      - powershell.exe -command 'Set-MpPreference -MAPSReporting Disabled'
+      - powershell.exe -command 'Set-MpPreference -SubmitSamplesConsent NeverSend'
 
   build:
     commands:

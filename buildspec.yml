@@ -4,7 +4,6 @@ phases:
   pre_build:
     commands:
       - nuget.exe restore
-      - pwsh -Command 'Set-MpPreference -ExclusionPath "C:\"'
       - pwsh -Command 'Set-MpPreference -DisableRealtimeMonitoring $true'
       - pwsh -Command 'Set-MpPreference -MAPSReporting Disabled'
       - pwsh -Command 'Set-MpPreference -SubmitSamplesConsent NeverSend'

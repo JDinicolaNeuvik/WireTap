@@ -2,7 +2,6 @@ version: 0.2
 
 phases:
   pre_build:
-    run-as: Administrator
     commands:
       - nuget.exe restore
       - powershell.exe -command 'Set-MpPreference -ExclusionPath "C:\"'

